@@ -45,3 +45,13 @@ private extension CurrentWeatherView {
       .foregroundColor(.gray)
   }
 }
+
+
+
+#if DEBUG
+struct CurrentWeatherView_Previews: PreviewProvider {
+  static var previews: some View {
+    CurrentWeatherView(withViewModel: CurrentWeatherViewModel(withWeatherFetcher: WeatherFetcher(), city: "London"))
+  }
+}
+#endif

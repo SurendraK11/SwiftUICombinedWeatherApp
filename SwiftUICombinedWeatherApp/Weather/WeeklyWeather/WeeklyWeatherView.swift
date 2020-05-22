@@ -72,3 +72,11 @@ private extension WeeklyWeatherView {
   
   
 }
+
+#if DEBUG
+struct WeeklyWeatherView_Previews: PreviewProvider {
+  static var previews: some View {
+     WeeklyWeatherView(withViewModel: WeeklyWeatherViewModel(withwWatherFetcher: WeatherFetcher()))
+  }
+}
+#endif
