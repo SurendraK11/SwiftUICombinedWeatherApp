@@ -1,10 +1,7 @@
-//
-//  AppDelegate.swift
-//  SwiftUICombinedWeatherApp
-//
-//  Created by Surendra on 21/05/2020.
-//  Copyright © 2020 Surendra. All rights reserved.
-//
+/// Surendra
+///
+///
+
 
 import UIKit
 
