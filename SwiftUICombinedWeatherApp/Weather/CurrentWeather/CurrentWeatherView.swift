@@ -22,7 +22,8 @@ struct CurrentWeatherView: View {
     .onDisappear(perform: {
       //self.currentWeatherViewModel.cancelPublisher()
     })
-    .navigationBarTitle(currentWeatherViewModel.city)
+        
+    .navigationBarTitle(Text(currentWeatherViewModel.city), displayMode: .inline)
     .listStyle(GroupedListStyle())
   }
 }
