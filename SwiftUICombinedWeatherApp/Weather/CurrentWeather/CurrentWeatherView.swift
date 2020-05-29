@@ -15,16 +15,24 @@ struct CurrentWeatherView: View {
   
   
   var body: some View {
-    List(content: content)
-      .onAppear {
-        self.currentWeatherViewModel.refresh()
-    }
-    .onDisappear(perform: {
-      //self.currentWeatherViewModel.cancelPublisher()
-    })
+    VStack {
         
-    .navigationBarTitle(Text(currentWeatherViewModel.city), displayMode: .inline)
-    .listStyle(GroupedListStyle())
+        if self.currentWeatherViewModel.isLoading {
+            ActivityIndicatorView().padding()
+        }
+        
+        List(content: content)
+          .onAppear {
+            self.currentWeatherViewModel.refresh()
+        }
+        .onDisappear(perform: {
+          self.currentWeatherViewModel.cancelSubscriptions()
+        })
+            
+        .navigationBarTitle(Text(currentWeatherViewModel.city), displayMode: .inline)
+        .listStyle(GroupedListStyle())
+    }
+    
   }
 }
 

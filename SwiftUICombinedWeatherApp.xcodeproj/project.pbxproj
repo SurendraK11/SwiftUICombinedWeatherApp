@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D380312480789D00D589D9 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D380302480789D00D589D9 /* ActivityIndicatorView.swift */; };
 		44FB3B9E2476F2C0000D1730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB3B9D2476F2C0000D1730 /* AppDelegate.swift */; };
 		44FB3BA02476F2C0000D1730 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB3B9F2476F2C0000D1730 /* SceneDelegate.swift */; };
 		44FB3BA42476F2C3000D1730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FB3BA32476F2C3000D1730 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44D380302480789D00D589D9 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		44FB3B9A2476F2C0000D1730 /* SwiftUICombinedWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICombinedWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FB3B9D2476F2C0000D1730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44FB3B9F2476F2C0000D1730 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44D3802F2480787900D589D9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				44D380302480789D00D589D9 /* ActivityIndicatorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		44FB3B912476F2C0000D1730 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		44FB3B9C2476F2C0000D1730 /* SwiftUICombinedWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				44D3802F2480787900D589D9 /* Components */,
 				44FB3BB12476F389000D1730 /* Utilities */,
 				44FB3BBA2476F389000D1730 /* Weather */,
 				44FB3B9D2476F2C0000D1730 /* AppDelegate.swift */,
@@ -277,6 +288,7 @@
 				44FB3BD42476F389000D1730 /* CurrentWeatherViewModel.swift in Sources */,
 				44FB3BD82476F389000D1730 /* WeatherError.swift in Sources */,
 				44FB3B9E2476F2C0000D1730 /* AppDelegate.swift in Sources */,
+				44D380312480789D00D589D9 /* ActivityIndicatorView.swift in Sources */,
 				44FB3BD32476F389000D1730 /* DailyWeatherRowViewModel.swift in Sources */,
 				44FB3BA02476F2C0000D1730 /* SceneDelegate.swift in Sources */,
 				44FB3BCC2476F389000D1730 /* MapView.swift in Sources */,
